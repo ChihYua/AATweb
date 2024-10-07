@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自動販賣機商城</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+              <span data-i18n="siteName">自動販賣機商城</span>
+            </div>
+            <nav>
+              <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> <span data-i18n="nav.home">首頁</span></a>
+                  <ul class="dropdown-content">
+                    <li><a href="https://www.magpie-life.com/#" data-i18n="nav.popularMachines">熱門販賣機</a></li>
+                    <li><a href="https://www.magpie-life.com/#" data-i18n="nav.newModels">最新機型</a></li>
+                    <li><a href="https://www.magpie-life.com/#" data-i18n="nav.specialOffers">特惠活動</a></li>
+                  </ul>
+                </li>
+                <li><a href="#products"><i class="fas fa-shopping-cart"></i> <span data-i18n="nav.products">商品</span></a>
+                  <ul class="dropdown-content">
+                    <li><a href="https://www.magpie-life.com/#" data-i18n="nav.beverageMachines">飲料販賣機</a></li>
+                    <li><a href="https://www.magpie-life.com/#" data-i18n="nav.foodMachines">食品販賣機</a></li>
+                    <li><a href="https://www.magpie-life.com/#" data-i18n="nav.combinationMachines">綜合販賣機</a></li>
+                  </ul>
+                </li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> <span data-i18n="nav.about">關於我們</span></a>
+                  <ul class="dropdown-content">
+                    <li><a href="https://www.magpie-life.com/#" data-i18n="nav.companyProfile">公司簡介</a></li>
+                    <li><a href="https://www.magpie-life.com/#" data-i18n="nav.businessPhilosophy">經營理念</a></li>
+                    <li><a href="https://www.magpie-life.com/#" data-i18n="nav.serviceTeam">服務團隊</a></li>
+                  </ul>
+                </li>
+                <li class="special-nav-item language-selector"><a href="#languages"><i class="fas fa-globe"></i> <span data-i18n="nav.language">語言</span></a>
+                  <ul class="dropdown-content">
+                    <li><a href="#" data-lang="zh-TW">繁體中文</a></li>
+                    <li><a href="#" data-lang="en">English</a></li>
+                    <li><a href="#" data-lang="ja">日本語</a></li>
+                  </ul>
+                </li>
+                <li class="special-nav-item"><a href="#contact"><i class="fas fa-envelope"></i> <span data-i18n="nav.contact">聯絡我們</span></a>
+                  <ul class="dropdown-content">
+                    <li><a href="#" data-i18n="nav.customerService">客戶服務</a></li>
+                    <li><a href="#" data-i18n="nav.technicalSupport">技術支援</a></li>
+                    <li><a href="#" data-i18n="nav.salesInquiry">銷售諮詢</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+      <section class="hero">
+          <div class="hero-content">
+              <h1>歡迎來到自動販賣機商城</h1>
+              <p>提供最先進、最便利的自動販賣解決方案</p>
+          </div>
+      </section>
+
+      <section class="featured-products">
+          <h2>精選商品</h2>
+          <div class="product-grid">
+              <div class="product-card">
+                  <img src="https://images.unsplash.com/photo-1525648199074-cee30ba79a4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="飲料販賣機">
+                  <h3>多功能飲料販賣機</h3>
+                  <p class="price">$5,999</p>
+                  <button>查看詳情</button>
+              </div>
+              <div class="product-card">
+                  <img src="https://images.unsplash.com/photo-1553341640-2af2e5ead2a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="零食販賣機">
+                  <h3>智能零食販賣機</h3>
+                  <p class="price">$4,799</p>
+                  <button>查看詳情</button>
+              </div>
+              <div class="product-card">
+                  <img src="https://images.unsplash.com/photo-1617103996702-96ff29b1c467?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="咖啡販賣機">
+                  <h3>高級咖啡販賣機</h3>
+                  <p class="price">$7,299</p>
+                  <button>查看詳情</button>
+              </div>
+              <div class="product-card">
+                  <img src="https://images.unsplash.com/photo-1585792180666-f7347c490ee2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="綜合販賣機">
+                  <h3>多用途綜合販賣機</h3>
+                  <p class="price">$8,599</p>
+                  <button>查看詳情</button>
+              </div>
+          </div>
+      </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3><i class="fas fa-home"></i> <span data-i18n="nav.home">首頁</span></h3>
+            <ul>
+                <li><a href="https://www.magpie-life.com/#" data-i18n="nav.popularMachines">熱門販賣機</a></li>
+                <li><a href="https://www.magpie-life.com/#" data-i18n="nav.newModels">最新機型</a></li>
+                <li><a href="https://www.magpie-life.com/#" data-i18n="nav.specialOffers">特惠活動</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3><i class="fas fa-shopping-cart"></i> <span data-i18n="nav.products">商品</span></h3>
+            <ul>
+                <li><a href="https://www.magpie-life.com/#" data-i18n="nav.beverageMachines">飲料販賣機</a></li>
+                <li><a href="https://www.magpie-life.com/#" data-i18n="nav.foodMachines">食品販賣機</a></li>
+                <li><a href="https://www.magpie-life.com/#" data-i18n="nav.combinationMachines">綜合販賣機</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3><i class="fas fa-info-circle"></i> <span data-i18n="nav.about">關於我們</span></h3>
+            <ul>
+                <li><a href="https://www.magpie-life.com/#" data-i18n="nav.companyProfile">公司簡介</a></li>
+                <li><a href="https://www.magpie-life.com/#" data-i18n="nav.businessPhilosophy">經營理念</a></li>
+                <li><a href="https://www.magpie-life.com/#" data-i18n="nav.serviceTeam">服務團隊</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3><i class="fas fa-envelope"></i> <span data-i18n="nav.contact">聯絡我們</span></h3>
+            <ul>
+                <li><a href="#" data-i18n="nav.customerService">客戶服務</a></li>
+                <li><a href="#" data-i18n="nav.technicalSupport">技術支援</a></li>
+                <li><a href="#" data-i18n="nav.salesInquiry">銷售諮詢</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 自動販賣機商城. 保留所有權利。</p>
+    </div>
+</footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html
