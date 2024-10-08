@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+  <div id="intro-animation" class="intro-animation">
+    <div class="company-name">
+        <span>自</span>
+        <span>動</span>
+        <span>販</span>
+        <span>賣</span>
+        <span>機</span>
+        <span>商</span>
+        <span>城</span>
+    </div>
+  </div>
+
     <header>
         <div class="header-content">
             <div class="logo">
@@ -56,14 +68,27 @@
     </header>
 
     <main>
-      <section class="hero">
-          <div class="hero-content">
-              <h1>歡迎來到自動販賣機商城</h1>
-              <p>提供最先進、最便利的自動販賣解決方案</p>
+      <div role="main">
+        <div class="background-slideshow-container">
+          <div class="background-slideshow">
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1525648199074-cee30ba79a4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
+            <div class="slide" style="background-image: url('1222優惠訊息-03.jpg');"></div>
+            <div class="slide"></div>
+            <div class="slide" style="background-image: url('1222優惠訊息-06.jpg');"></div>
           </div>
-      </section>
-
-      <section class="featured-products">
+          <div class="main-content">
+            <h1>歡迎來到自動販賣機商城</h1>
+            <p>提供最先進、最便利的自動販賣解決方案</p>
+          </div>
+          <div class="slideshow-controls">
+            <button class="control-button" data-slide="0"></button>
+            <button class="control-button" data-slide="1"></button>
+            <button class="control-button" data-slide="2"></button>
+            <button class="control-button" data-slide="3"></button>
+          </div>
+        </div>
+      
+        <div class="featured-products">      
           <h2>精選商品</h2>
           <div class="product-grid">
               <div class="product-card">

@@ -190,3 +190,103 @@ const translations = {
 
     // ... 其餘的代碼 ...
 });
+document.addEventListener('DOMContentLoaded', function() {
+  // 原有的代碼保持不變
+
+  // 幻燈片背景控制
+  const slides = document.querySelectorAll('.background-slideshow .slide');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+      slides[currentSlide].classList.remove('active');
+      slides[index].classList.add('active');
+      currentSlide = index;
+  }
+
+  function nextSlide() {
+      let nextIndex = (currentSlide + 1) % slides.length;
+      showSlide(nextIndex);
+  }
+
+  // 初始顯示第一張幻燈片
+  showSlide(0);
+
+  // 每 5 秒切換一次幻燈片
+  setInterval(nextSlide, 5000);
+
+  // 原有的其他代碼
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelectorAll('.background-slideshow .slide');
+  const controlButtons = document.querySelectorAll('.control-button');
+  let currentSlide = 0;
+  let slideInterval;
+
+  function showSlide(index) {
+    slides[currentSlide].classList.remove('active');
+    controlButtons[currentSlide].classList.remove('active');
+    slides[index].classList.add('active');
+    controlButtons[index].classList.add('active');
+    currentSlide = index;
+  }
+
+  function nextSlide() {
+    let nextIndex = (currentSlide + 1) % slides.length;
+    showSlide(nextIndex);
+  }
+
+  function startSlideshow() {
+    slideInterval = setInterval(nextSlide, 5000);
+  }
+
+  function stopSlideshow() {
+    clearInterval(slideInterval);
+  }
+
+  controlButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      stopSlideshow();
+      showSlide(index);
+      startSlideshow();
+    });
+  });
+
+  // 初始化
+  showSlide(0);
+  startSlideshow();
+
+  // 滑鼠懸停時暫停幻燈片
+  document.querySelector('.background-slideshow-container').addEventListener('mouseenter', stopSlideshow);
+  document.querySelector('.background-slideshow-container').addEventListener('mouseleave', startSlideshow);
+});
+document.addEventListener('DOMContentLoaded', function() {
+  const introAnimation = document.getElementById('intro-animation');
+  const mainContent = document.getElementById('main-content');
+
+  // 開場動畫持續時間
+  const animationDuration = 3000; // 3秒
+
+  // 顯示開場動畫
+  setTimeout(() => {
+      introAnimation.style.animation = 'fadeOut 1s ease forwards';
+      
+      // 動畫結束後隱藏動畫元素並顯示主要內容
+      setTimeout(() => {
+          introAnimation.style.display = 'none';
+          mainContent.style.display = 'block';
+          
+          // 在這裡初始化其他功能，如背景幻燈片
+          initializeBackgroundSlideshow();
+      }, 1000);
+  }, animationDuration);
+
+  // 初始化背景幻燈片功能
+  function initializeBackgroundSlideshow() {
+      // 這裡放置之前的背景幻燈片相關代碼
+      // ...
+  }
+
+  // 其他現有的 JavaScript 代碼
+  // ...
+});
